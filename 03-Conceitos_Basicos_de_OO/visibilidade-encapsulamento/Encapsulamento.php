@@ -23,13 +23,20 @@ class BankAccount
 
         $this->balance -= $money;
     }
+
+    public function getBalance()
+    {
+        return $this->balance;
+    }
+
+
 }
 
 $bankAccaout1 = new BankAccount();
 $bankAccaout1->deposit(10);
 $bankAccaout1->deposit(20);
 
-print $bankAccaout1->balance; // propriedade deve ser private
+print $bankAccaout1->getBalance(); // propriedade deve ser private
 
 
 
