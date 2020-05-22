@@ -444,6 +444,33 @@ print $print->toPrint();
 
 #### 3.16. Métodos & Atributos Estáticos
 
+```php
+<?php
+
+class Html
+{
+    public static $mailTag = "<html>";
+    const END_TAG = "</html>";
+
+    public static function openTagHtml()
+    {
+        return self::$mailTag;
+    }
+
+    public static function EndTagHtml()
+    {
+        return self::END_TAG;
+    }
+}
+
+print Html::openTagHtml();
+print Html::EndTagHtml();
+print "\n";
+print html::$mailTag;
+print html::END_TAG;
+
+```
+
 #### 3.17. Palavra Reservada Final (Classes e métodos)
 
 
