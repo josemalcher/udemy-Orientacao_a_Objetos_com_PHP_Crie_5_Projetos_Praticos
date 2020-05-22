@@ -473,6 +473,24 @@ print html::END_TAG;
 
 #### 3.17. Palavra Reservada Final (Classes e métodos)
 
+```php
+<?php
+
+final class User
+{
+    private $name;
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    final public function setName($name)
+    {
+        $this->name = $name;
+    }
+}
+```
 
 [Voltar ao Índice](#indice)
 
