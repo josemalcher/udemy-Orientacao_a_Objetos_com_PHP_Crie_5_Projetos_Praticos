@@ -626,9 +626,104 @@ print $produto; // Retorno toString da classe ProtudosToString
 ## <a name="parte5">5 - Autoload & Namespaces</a>
 
 #### 5.23. Autoload 101
+
+- [05-Autoload_Namespaces/index.php](05-Autoload_Namespaces/index.php)
+
+```php
+<?php
+
+//require __DIR__ . "/class/JsonExport.php";
+//require __DIR__ . "/class/XmlExport.php";
+
+function autoload($class)
+{
+    require __DIR__ . "/class/".$class.".php";
+}
+
+spl_autoload_register('autoload');
+
+
+if ($_GET['export'] == 'xml') {
+    print (new XmlExport())->doExport();
+}
+if ($_GET['export'] == 'json') {
+    print (new JsonExport())->doExport();
+}
+
+```
+- [05-Autoload_Namespaces/class/XmlExport.php](05-Autoload_Namespaces/class/XmlExport.php)
+- [05-Autoload_Namespaces/class/JsonExport.php](05-Autoload_Namespaces/class/JsonExport.php)
+
 #### 5.24. Conhecendo Namespaces
+
+- [05-Autoload_Namespaces/nameSpace/index.php](05-Autoload_Namespaces/nameSpace/index.php)
+```php
+<?php
+
+//require __DIR__ . "/class/JsonExport.php";
+//require __DIR__ . "/class/XmlExport.php";
+
+use Export\JsonExport;
+use Export\XmlExport;
+
+function autoload($class)
+{
+    $baseFolder = __DIR__ . '/src/';
+    $class = str_replace('\\', '/', $class);
+    require $baseFolder . $class . '.php';
+}
+
+spl_autoload_register('autoload');
+
+
+if ($_GET['export'] == 'xml') {
+    print (new XmlExport())->doExport();
+}
+if ($_GET['export'] == 'json') {
+    print (new JsonExport())->doExport();
+}
+
+```
+
+- [05-Autoload_Namespaces/nameSpace/src/Export/JsonExport.php](05-Autoload_Namespaces/nameSpace/src/Export/JsonExport.php)
+
+```php
+<?php
+
+namespace Export;
+
+use Export\Contract\Export;
+
+class JsonExport implements Export
+{
+    public function doExport()
+    {
+        return "Json Export";
+    }
+}
+```
+- [05-Autoload_Namespaces/nameSpace/src/Export/XmlExport.php](05-Autoload_Namespaces/nameSpace/src/Export/XmlExport.php)
+- [05-Autoload_Namespaces/nameSpace/src/Export/Contract/Export.php](05-Autoload_Namespaces/nameSpace/src/Export/Contract/Export.php)
+
+```php
+<?php
+
+namespace Export\Contract;
+
+interface Export
+{
+
+}
+```
+
 #### 5.25. Autoload PSR-4
+
+
+
 #### 5.26. Autoload com Composer
+
+
+
 
 [Voltar ao Índice](#indice)
 
