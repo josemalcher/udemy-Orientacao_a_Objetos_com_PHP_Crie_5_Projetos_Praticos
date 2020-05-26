@@ -598,6 +598,24 @@ ProdutoCallCallStatic::getConnection("Conect 1", 200); // métodos estáticos
 ```
 
 #### 4.21. __toString
+
+- [04-Metodos_Magicos/MM_tostring.php](04-Metodos_Magicos/MM_tostring.php)
+
+```php
+<?php
+
+class ProtudosToString
+{
+    public function __toString()
+    {
+        return "Retorno toString da classe " . __CLASS__; // sempre uma string ou exceptions v7.4
+    }
+}
+
+$produto = new ProtudosToString();
+print $produto; // Retorno toString da classe ProtudosToString
+```
+
 #### 4.22. Conclusões
 
 [Voltar ao Índice](#indice)
