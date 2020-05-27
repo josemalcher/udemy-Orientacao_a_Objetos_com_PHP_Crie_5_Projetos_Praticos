@@ -1,8 +1,8 @@
 <?php
 
-namespace Export;
+namespace Code\Export;
 
-use Export\Contract\Export;
+use Code\Export\Contract\Export;
 
 class XmlExport implements Export
 {

@@ -3,9 +3,15 @@
 //require __DIR__ . "/class/JsonExport.php";
 //require __DIR__ . "/class/XmlExport.php";
 
-use Export\JsonExport;
-use Export\XmlExport;
+//use Export\JsonExport;
+//use Export\XmlExport;
 
+use Code\Export\{
+    JsonExport, XmlExport
+};
+
+require __DIR__ . '/autoload_psr4.php';
+/*
 function autoload($class)
 {
     $baseFolder = __DIR__ . '/src/';
@@ -14,6 +20,7 @@ function autoload($class)
 }
 
 spl_autoload_register('autoload');
+*/
 
 
 if ($_GET['export'] == 'xml') {

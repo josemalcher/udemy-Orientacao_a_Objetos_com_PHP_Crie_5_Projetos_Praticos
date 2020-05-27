@@ -718,6 +718,100 @@ interface Export
 
 #### 5.25. Autoload PSR-4
 
+- [05-Autoload_Namespaces/nameSpace/autoload_psr4.php](05-Autoload_Namespaces/nameSpace/autoload_psr4.php)
+
+```php
+<?php
+
+//https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md
+
+spl_autoload_register(function ($class) {
+
+    // project-specific namespace prefix - namespace BASE
+    $prefix = 'Code\\';
+
+    // base directory for the namespace prefix
+    $base_dir = __DIR__ . '/src/';
+
+    // does the class use the namespace prefix?
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0) {
+        // no, move to the next registered autoloader
+        return;
+    }
+
+    // get the relative class name
+    $relative_class = substr($class, $len);
+
+    // replace the namespace prefix with the base directory, replace namespace
+    // separators with directory separators in the relative class name, append
+    // with .php
+    $file = $base_dir . str_replace('\\', '/', $relative_class) . '.php';
+
+    // if the file exists, require it
+    if (file_exists($file)) {
+        require $file;
+    }
+});
+```
+
+- [05-Autoload_Namespaces/nameSpace/index.php](05-Autoload_Namespaces/nameSpace/index.php)
+
+```php
+<?php
+
+//require __DIR__ . "/class/JsonExport.php";
+//require __DIR__ . "/class/XmlExport.php";
+
+//use Export\JsonExport;
+//use Export\XmlExport;
+
+use Code\Export\{
+    JsonExport, XmlExport
+};
+
+require __DIR__ . '/autoload_psr4.php';
+/*
+function autoload($class)
+{
+    $baseFolder = __DIR__ . '/src/';
+    $class = str_replace('\\', '/', $class);
+    require $baseFolder . $class . '.php';
+}
+
+spl_autoload_register('autoload');
+*/
+
+
+if ($_GET['export'] == 'xml') {
+    print (new XmlExport())->doExport();
+}
+if ($_GET['export'] == 'json') {
+    print (new JsonExport())->doExport();
+}
+
+```
+
+- [05-Autoload_Namespaces/nameSpace/src/Export/XmlExport.php](05-Autoload_Namespaces/nameSpace/src/Export/XmlExport.php)
+
+```php
+<?php
+
+namespace Code\Export;
+
+use Code\Export\Contract\Export;
+
+class XmlExport implements Export
+{
+    public function doExport()
+    {
+        return "XML EXPORT";
+    }
+}
+```
+
+- [05-Autoload_Namespaces/nameSpace/src/Export/JsonExport.php](05-Autoload_Namespaces/nameSpace/src/Export/JsonExport.php)
+- [05-Autoload_Namespaces/nameSpace/src/Export/Contract/Export.php](05-Autoload_Namespaces/nameSpace/src/Export/Contract/Export.php)
 
 
 #### 5.26. Autoload com Composer
