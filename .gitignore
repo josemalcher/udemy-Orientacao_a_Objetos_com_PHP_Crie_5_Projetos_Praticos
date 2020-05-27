@@ -120,3 +120,4 @@ fabric.properties
 # Project-level settings
 /.tgitconfig
 
+/05-Autoload_Namespaces/autoload-composer/vendor/

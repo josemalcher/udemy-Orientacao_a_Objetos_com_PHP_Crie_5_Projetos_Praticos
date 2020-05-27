@@ -816,8 +816,28 @@ class XmlExport implements Export
 
 #### 5.26. Autoload com Composer
 
+- [05-Autoload_Namespaces/autoload-composer/composer.json](05-Autoload_Namespaces/autoload-composer/composer.json)
 
+```json
+{
+  "autoload": {
+    "psr-4": {
+      "Code\\": "src/"
+    }
+  }
+}
 
+```
+
+```php
+require __DIR__ . '/vendor/autoload.php';
+```
+
+```
+composer dump
+# ou
+composer dump-autoload
+```
 
 [Voltar ao Índice](#indice)
 
