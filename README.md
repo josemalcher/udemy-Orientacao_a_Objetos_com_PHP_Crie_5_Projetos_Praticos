@@ -1016,6 +1016,29 @@ print $c->showName("José");
 
 #### 6.30. Classes Anônimas
 
+```php
+<?php
+
+$classAnonymous = new class{
+    public function log($message)
+    {
+        return $message;
+    }
+};
+
+class BackAccount
+{
+    public function withDraw($value, $classAnonymous)
+    {
+        return $classAnonymous->log("Loggin... WithDraw....");
+    }
+}
+
+$bank = new BackAccount();
+print $bank->withDraw(20, $classAnonymous);
+// Loggin... WithDraw....
+```
+
 [Voltar ao Índice](#indice)
 
 ---
@@ -1024,6 +1047,11 @@ print $c->showName("José");
 ## <a name="parte7">7 - Exceptions</a>
 
 #### 7.31. Conhecendo Exceptions
+
+- [https://www.php.net/throwable](https://www.php.net/throwable)
+
+
+
 #### 7.32. Lançando Exceptions
 #### 7.33. Exceptions Customizadas
 #### 7.34. Bloco Finally
