@@ -1055,7 +1055,7 @@ print $bank->withDraw(20, $classAnonymous);
 
 use CodeException\Sum;
 
-return __DIR__ . "/vendor/autoload.php";
+require __DIR__ . "/vendor/autoload.php";
 
 try {
     $sum = new Sum();
@@ -1069,7 +1069,48 @@ try {
 
 
 #### 7.32. Lançando Exceptions
+
+- [https://3v4l.org/f8Boe](https://3v4l.org/f8Boe)
+
+```php
+<?php
+
+use CodeException\Sum;
+
+require __DIR__ . "/vendor/autoload.php";
+
+try {
+    $sum = new Sum();
+    print $sum->doSum(10, 9);
+
+}catch (\Error $e){
+    print_r($e->getTrace());
+}catch (\Exception $e){
+    print $e->getMessage();
+}
+
+```
+
+```php
+<?php
+
+namespace CodeException;
+
+class Sum{
+    public function doSum($num1, $num2)
+    {
+        if ($num2 >= 10) {
+            throw new \Exception("Parametro 2 deve ser menor ou igual a 10");
+        }
+        return $num1 + $num2;
+    }
+}
+```
+
 #### 7.33. Exceptions Customizadas
+
+
+
 #### 7.34. Bloco Finally
 
 [Voltar ao Índice](#indice)
