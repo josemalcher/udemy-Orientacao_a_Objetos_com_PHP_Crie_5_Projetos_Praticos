@@ -1109,7 +1109,44 @@ class Sum{
 
 #### 7.33. Exceptions Customizadas
 
+```php
+<?php
 
+namespace CodeException\MyExceptions;
+
+use Throwable;
+
+class MyCustomException extends \Exception
+{
+    /**
+     * MyCustomException constructor.
+     */
+    public function __construct($message = "Minha Mensagem customizada", $code = 0, Throwable $previous = null)
+    {
+        parent::__construct($message, $code, $previous);
+    }
+}
+```
+
+```php
+<?php
+
+use CodeException\Sum;
+
+
+require __DIR__ . "/vendor/autoload.php";
+
+try {
+    $sum = new Sum();
+    print $sum->doSum(10, 20);
+
+}/* catch (\Error $e) {
+    print_r($e->getTrace());
+}*/ catch (\CodeException\MyExceptions\MyCustomException $e) {
+    print $e->getMessage();
+}
+
+```
 
 #### 7.34. Bloco Finally
 
