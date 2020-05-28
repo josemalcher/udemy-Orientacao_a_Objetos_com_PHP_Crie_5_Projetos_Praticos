@@ -121,3 +121,5 @@ fabric.properties
 /.tgitconfig
 
 /05-Autoload_Namespaces/autoload-composer/vendor/
+/07-Exceptions/vendor/
+/07-Exceptions/vendor/
