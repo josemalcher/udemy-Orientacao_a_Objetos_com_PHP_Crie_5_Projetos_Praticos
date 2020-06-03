@@ -1182,8 +1182,6 @@ try {
 
 - [https://github.com/CodeExpertsLearning/php-basico-online](https://github.com/CodeExpertsLearning/php-basico-online)
 
-
-
 ### 8.36. Iniciando FrontController
 ### 8.37. Manipulando Controllers em nosso FrontController
 ### 8.38. Concluindo FrontController
