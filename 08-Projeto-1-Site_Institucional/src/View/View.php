@@ -1,18 +1,12 @@
 <?php
 
-
-namespace View;
-
+namespace Code\View;
 
 class View
 {
     private $view;
     private $data = [];
 
-    /**
-     * View constructor.
-     * @param $view
-     */
     public function __construct($view)
     {
         $this->view = $view;
@@ -25,7 +19,7 @@ class View
 
     public function __get($index)
     {
-        $this->data[$index];
+       return $this->data[$index];
     }
 
     public function render()
