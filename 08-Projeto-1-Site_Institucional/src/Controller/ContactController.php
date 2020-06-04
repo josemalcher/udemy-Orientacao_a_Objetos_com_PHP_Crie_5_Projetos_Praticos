@@ -1,17 +1,15 @@
 <?php
 
+
 namespace Code\Controller;
 
 use Code\View\View;
 
-class PageController
+class ContactController
 {
     public function index()
     {
-        $view = new View('site/index.phtml');
-
-        $view->nome = "José Malcher Jr";
-
+        $view = new View('site/about.phtml');
         return $view->render();
     }
 }
