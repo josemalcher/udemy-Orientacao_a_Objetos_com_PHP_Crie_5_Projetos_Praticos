@@ -28,7 +28,7 @@ abstract class Entity
 
     public function find(int $id)
     {
-        $sql = 'SELEcT * FROM products WHERE id = :id';
+        $sql = 'SELECT * FROM products WHERE id = :id';
         $get = $this->con->prepare($sql);
         $get->bindValue(':id', $id, PDO::PARAM_INT);
         $get->execute();

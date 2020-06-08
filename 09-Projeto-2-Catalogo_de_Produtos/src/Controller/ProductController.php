@@ -2,21 +2,24 @@
 
 namespace Code\Controller;
 
-
+use Code\View\View;
 use Code\Entity\Product;
 
 class ProductController
 {
     public function index($id)
     {
-        //print $id;
-        $pdo = new \PDO('mysql:dbname=formacao_php;host=localhost', 'root', '');
-        var_dump((new Product($pdo))->find($id)); die;
-        //$view = new View('site/index.phtml');
-        //$view->nome = "José Malcher Jr";
+        $id = (int)$id;
 
-        //$view->products = ( new Product($pdo))->findAll();
-        //return $view->render();
+        $pdo = new \PDO('mysql:dbname=formacao_php;host=localhost', 'root', '');
+        //var_dump((new Product($pdo))->find($id)); die;
+
+        $view = new View('site/single.phtml');
+        $view->product = (new Product($pdo))->find($id);
+
+        return $view->render();
+
+
     }
 
 
