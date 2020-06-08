@@ -26,9 +26,14 @@ abstract class Entity
         return $get->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function find()
+    public function find(int $id)
     {
-        return 'SELEcT * FROM products WHERE id = 10';
+        $sql = 'SELEcT * FROM products WHERE id = :id';
+        $get = $this->con->prepare($sql);
+        $get->bindValue(':id', $id, PDO::PARAM_INT);
+        $get->execute();
+        return $get->fetch(PDO::FETCH_ASSOC);
+
     }
 
 }
