@@ -1273,6 +1273,9 @@ print $response;
 ## <a name="parte11">11 - Projeto 4 - Blog</a>
 
 #### 11.74. Iniciando Projeto
+
+![DB](10-Projeto-3-Mini-Gerenciador_de_Gastos_Pessoais/img/PROJETO_10_modelo-DB.png)
+
 #### 11.75. Considerações Sobre o Banco de Dados do Projeto
 #### 11.76. Primeiras Modificações do Blog
 #### 11.77. Iniciando CRUD de Postagens
