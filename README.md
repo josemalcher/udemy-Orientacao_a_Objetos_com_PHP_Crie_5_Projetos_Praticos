@@ -1244,7 +1244,12 @@ print $response;
 ## <a name="parte10">10 - Projeto 3 - Mini-Gerenciador de Gastos Pessoais</a>
 
 #### 10.53. Apresentando Projeto
+
+![DB](10-Projeto-3-Mini-Gerenciador_de_Gastos_Pessoais/img/PROJETO_10_modelo-DB.png)
+
 #### 10.54. Melhorando Entity (FindAll & Where)
+
+
 #### 10.55. Testando Entity (Where) & criando método Find
 #### 10.56. Criando Método Insert no Entity
 #### 10.57. Criando Método Update no Entity
@@ -1273,9 +1278,6 @@ print $response;
 ## <a name="parte11">11 - Projeto 4 - Blog</a>
 
 #### 11.74. Iniciando Projeto
-
-![DB](10-Projeto-3-Mini-Gerenciador_de_Gastos_Pessoais/img/PROJETO_10_modelo-DB.png)
-
 #### 11.75. Considerações Sobre o Banco de Dados do Projeto
 #### 11.76. Primeiras Modificações do Blog
 #### 11.77. Iniciando CRUD de Postagens
