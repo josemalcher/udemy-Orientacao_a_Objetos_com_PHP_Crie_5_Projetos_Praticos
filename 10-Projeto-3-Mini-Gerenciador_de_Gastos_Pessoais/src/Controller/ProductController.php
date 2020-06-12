@@ -17,7 +17,8 @@ class ProductController
 
         $pdo = Connection::getInstace();
         //var_dump((new Product($pdo))->where(['name'=>'Jose', 'email'=>'josem@teste.com']));
-        print_r((new Product($pdo))->where(['name'=>'jose', 'email'=>'jose@jose.com']));
+        //var_dump((new Product($pdo))->where(['category_id'=>2]));
+        var_dump((new Product($pdo))->find(10));
 
 
 /*

@@ -27,13 +27,10 @@ abstract class Entity
         return $get->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function find(int $id)
+    public function find(int $id, $field = '*')
     {
-        $sql = 'SELECT * FROM products WHERE id = :id';
-        $get = $this->con->prepare($sql);
-        $get->bindValue(':id', $id, PDO::PARAM_INT);
-        $get->execute();
-        return $get->fetch(PDO::FETCH_ASSOC);
+
+        return current( $this->where(['id' => $id], '', $field));
 
     }
 
@@ -57,10 +54,11 @@ abstract class Entity
         $get = $this->con->prepare($sql);
 
         foreach ($conditions as $k => $v) {
-            gettype($v == 'int' ?   $get->bindValue(':' . $k, $v, \PDO::PARAM_INT)
-                                       : $get->bindValue(':' . $k, $v, \PDO::PARAM_STR));
+            gettype($v) == 'int'       ? $get->bindValue(':' . $k, $v, \PDO::PARAM_INT)
+                                       : $get->bindValue(':' . $k, $v, \PDO::PARAM_STR);
         }
 
+        //var_dump($get);
         $get->execute();
 
         return $get->fetchAll(\PDO::FETCH_ASSOC);
