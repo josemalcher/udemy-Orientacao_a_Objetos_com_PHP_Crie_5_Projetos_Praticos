@@ -1325,6 +1325,37 @@ abstract class Entity
 
 #### 10.55. Testando Entity (Where) & criando método Find
 #### 10.56. Criando Método Insert no Entity
+
+```php
+public function insert($data)
+    {
+        $binds = array_keys($data);
+
+        $sql = 'INSERT INTO ' . $this->table . ' ('. implode(', ', $binds)  .', created_at, updated_at) 
+        VALUES(:'. implode(', :', $binds) .', NOW(), NOW()) ';
+
+        //print $sql;
+
+        $insert = $this->bind($sql, $data);
+
+        return $insert->execute();
+
+    }
+
+    private function bind($sql, $data)
+    {
+        $bind  =  $this->con->prepare($sql);
+
+        foreach ($data as $k => $v) {
+            gettype($v) == 'int'       ? $bind->bindValue(':' . $k, $v, \PDO::PARAM_INT)
+                : $bind->bindValue(':' . $k, $v, \PDO::PARAM_STR);
+        }
+
+        //var_dump($get);
+        return $bind;
+    }
+```
+
 #### 10.57. Criando Método Update no Entity
 #### 10.58. Criando Método Delete no Entity
 #### 10.59. Organizando Projeto

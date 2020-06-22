@@ -51,17 +51,38 @@ abstract class Entity
         }
         $sql .= $where;
 
-        $get = $this->con->prepare($sql);
-
-        foreach ($conditions as $k => $v) {
-            gettype($v) == 'int'       ? $get->bindValue(':' . $k, $v, \PDO::PARAM_INT)
-                                       : $get->bindValue(':' . $k, $v, \PDO::PARAM_STR);
-        }
-
-        //var_dump($get);
+        $get = $this->bind($sql, $conditions);
         $get->execute();
 
         return $get->fetchAll(\PDO::FETCH_ASSOC);
+    }
+
+    public function insert($data)
+    {
+        $binds = array_keys($data);
+
+        $sql = 'INSERT INTO ' . $this->table . ' ('. implode(', ', $binds)  .', created_at, updated_at) 
+        VALUES(:'. implode(', :', $binds) .', NOW(), NOW()) ';
+
+        //print $sql;
+
+        $insert = $this->bind($sql, $data);
+
+        return $insert->execute();
+
+    }
+
+    private function bind($sql, $data)
+    {
+        $bind  =  $this->con->prepare($sql);
+
+        foreach ($data as $k => $v) {
+            gettype($v) == 'int'       ? $bind->bindValue(':' . $k, $v, \PDO::PARAM_INT)
+                : $bind->bindValue(':' . $k, $v, \PDO::PARAM_STR);
+        }
+
+        //var_dump($get);
+        return $bind;
     }
 
 }
