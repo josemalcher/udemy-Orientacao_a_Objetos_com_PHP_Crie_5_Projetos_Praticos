@@ -72,6 +72,31 @@ abstract class Entity
 
     }
 
+    public function update($data)
+    {
+        if (!array_key_exists('id', $data)) {
+            throw new \Exception('é preciso informar um ID válido para o UPDATE');
+        }
+
+        $sql = 'UPDATE '. $this->table . ' SET ' ;
+
+        $set = null;
+
+        $binds = array_keys($data);
+
+        foreach ($binds as $v) {
+            if ($v !== 'id') {
+                $set .= is_null($set) ? $v . ' = :' . $v : ', ' . $v . ' = :' . $v;
+            }
+        }
+
+        $sql .= $set . ', updated_at = NOW() WHERE id = :id';
+
+        $update = $this->bind($sql, $data);
+
+        return $update->execute();
+    }
+
     private function bind($sql, $data)
     {
         $bind  =  $this->con->prepare($sql);

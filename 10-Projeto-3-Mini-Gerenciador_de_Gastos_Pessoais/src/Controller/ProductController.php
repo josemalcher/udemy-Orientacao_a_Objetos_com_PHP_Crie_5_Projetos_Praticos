@@ -17,7 +17,7 @@ class ProductController
 
         $pdo = Connection::getInstace();
         //var_dump((new Product($pdo))->where(['name'=>'Jose', 'email'=>'josem@teste.com']));
-        var_dump((new Product($pdo))->where(['id'=>12]));
+        //var_dump((new Product($pdo))->where(['id'=>12]));
         //var_dump((new Product($pdo))->find(10));
 
         /*var_dump((new Product($pdo))->insert(
@@ -27,6 +27,8 @@ class ProductController
              'description'=> 'Teste',
              'slug'=>'slug']
         ));*/
+
+        var_dump((new Product($pdo))->update(['id'=> 1, 'name'=> 'Teste update ok']));
 
 
 /*
