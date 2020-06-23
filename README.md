@@ -1386,6 +1386,18 @@ public function update($data)
 ```
 
 #### 10.58. Criando Método Delete no Entity
+
+```php
+public function delete(int $id): bool
+    {
+        $sql = 'DELETE FROM ' . $this->table . ' WHERE id = :id';
+
+        $delete = $this->bind($sql, ['id'=> $id]);
+
+        return $delete->execute();
+    }
+```
+
 #### 10.59. Organizando Projeto
 #### 10.60. Iniciando Cadastro de Gastos
 #### 10.61. Processando Cadastro

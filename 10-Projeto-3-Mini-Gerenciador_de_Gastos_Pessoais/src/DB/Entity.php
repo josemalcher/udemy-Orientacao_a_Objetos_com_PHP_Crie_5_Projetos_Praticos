@@ -97,6 +97,15 @@ abstract class Entity
         return $update->execute();
     }
 
+    public function delete(int $id): bool
+    {
+        $sql = 'DELETE FROM ' . $this->table . ' WHERE id = :id';
+
+        $delete = $this->bind($sql, ['id'=> $id]);
+
+        return $delete->execute();
+    }
+
     private function bind($sql, $data)
     {
         $bind  =  $this->con->prepare($sql);

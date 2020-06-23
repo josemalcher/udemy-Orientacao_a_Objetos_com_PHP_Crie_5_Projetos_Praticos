@@ -28,7 +28,9 @@ class ProductController
              'slug'=>'slug']
         ));*/
 
-        var_dump((new Product($pdo))->update(['id'=> 1, 'name'=> 'Teste update ok']));
+        //var_dump((new Product($pdo))->update(['id'=> 1, 'name'=> 'Teste update ok']));
+
+        var_dump((new Product($pdo))->delete(12));
 
 
 /*
