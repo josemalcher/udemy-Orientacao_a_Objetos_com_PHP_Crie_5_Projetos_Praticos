@@ -3,8 +3,9 @@
 
 namespace Code\Entity;
 
+use Code\DB\Entity;
 
-class User
+class User extends Entity
 {
-    protected $table = 'user';
+    protected $table = 'users';
 }

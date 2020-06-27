@@ -5,7 +5,9 @@ namespace Code\Controller;
 
 
 use Code\DB\Connection;
+use Code\Entity\Category;
 use Code\Entity\Expense;
+use Code\Entity\User;
 use Code\View\View;
 
 class MyExpensesController
@@ -18,19 +20,22 @@ class MyExpensesController
     public function new()
     {
         $method = $_SERVER['REQUEST_METHOD'];
+        $connection = Connection::getInstace();
+
         if ($method == 'POST') {
-            //var_dump($_POST);die;
+            $data = $_POST;
 
-            $post = $_POST;
+            $expense = new Expense($connection);
+            $expense->insert($data);
 
-            $expense = new Expense(Connection::getInstace());
-            $expense->insert($post);
-
-            return header('Location' . HOME . '/myexpenses');
-
+            return header('Location: ' . HOME . '/myexpenses');
         }
 
         $view = new View('expenses/new.phtml');
+
+        $view->categories = (new Category($connection))->findAll();
+        $view->users      = (new     User($connection))->findAll();
+
         return $view->render();
     }
 }
