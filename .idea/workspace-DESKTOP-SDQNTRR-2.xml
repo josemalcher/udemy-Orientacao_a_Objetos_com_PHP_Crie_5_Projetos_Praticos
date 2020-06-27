@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34ca7054-d182-47ad-bd1d-38ccaba62a8c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="José Stélio Malcher Jr &lt;contato@josemalcher.net&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
+  <component name="ProjectId" id="1cAX6GKYMHIBUudqXwmPvyFhhSt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/05-Autoload_Namespaces/autoload-composer" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\josem\OneDrive\02-workspaces\workspace-PHP-Codeigniter-Laravel-Wordpress\udemy-Orientacao_a_Objetos_com_PHP_Crie_5_Projetos_Praticos\05-Autoload_Namespaces\nameSpace\src\Export" />
+      <recent name="C:\Users\josem\OneDrive\02-workspaces\workspace-PHP-Codeigniter-Laravel-Wordpress\udemy-Orientacao_a_Objetos_com_PHP_Crie_5_Projetos_Praticos\05-Autoload_Namespaces\nameSpace\src" />
+      <recent name="C:\Users\josem\OneDrive\02-workspaces\workspace-PHP-Codeigniter-Laravel-Wordpress\udemy-Orientacao_a_Objetos_com_PHP_Crie_5_Projetos_Praticos\05-Autoload_Namespaces\nameSpace" />
+      <recent name="C:\Users\josem\OneDrive\02-workspaces\workspace-PHP-Codeigniter-Laravel-Wordpress\udemy-Orientacao_a_Objetos_com_PHP_Crie_5_Projetos_Praticos\05-Autoload_Namespaces\ " />
+      <recent name="C:\Users\josem\OneDrive\02-workspaces\workspace-PHP-Codeigniter-Laravel-Wordpress\udemy-Orientacao_a_Objetos_com_PHP_Crie_5_Projetos_Praticos\05-Autoload_Namespaces\exemplo01" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\josem\OneDrive\02-workspaces\workspace-PHP-Codeigniter-Laravel-Wordpress\udemy-Orientacao_a_Objetos_com_PHP_Crie_5_Projetos_Praticos\05-Autoload_Namespaces\autoload-composer" />
+      <recent name="C:\Users\josem\OneDrive\02-workspaces\workspace-PHP-Codeigniter-Laravel-Wordpress\udemy-Orientacao_a_Objetos_com_PHP_Crie_5_Projetos_Praticos\05-Autoload_Namespaces\nameSpace\class" />
+      <recent name="C:\Users\josem\OneDrive\02-workspaces\workspace-PHP-Codeigniter-Laravel-Wordpress\udemy-Orientacao_a_Objetos_com_PHP_Crie_5_Projetos_Praticos\05-Autoload_Namespaces" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34ca7054-d182-47ad-bd1d-38ccaba62a8c" name="Default Changelist" comment="" />
+      <created>1589972194748</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589972194748</updated>
+      <workItem from="1589972197621" duration="5749000" />
+      <workItem from="1590108896481" duration="1796000" />
+      <workItem from="1590145805951" duration="14114000" />
+      <workItem from="1590195922245" duration="654000" />
+      <workItem from="1590401024878" duration="724000" />
+      <workItem from="1590457070768" duration="1289000" />
+      <workItem from="1590461795976" duration="688000" />
+      <workItem from="1590490594306" duration="11321000" />
+      <workItem from="1590546453098" duration="195000" />
+      <workItem from="1590546721187" duration="477000" />
+      <workItem from="1590570712030" duration="8837000" />
+      <workItem from="1590603325229" duration="598000" />
+    </task>
+    <task id="LOCAL-00001" summary="Módulos Introdutórios 01 e 2">
+      <created>1589983967125</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589983967125</updated>
+    </task>
+    <task id="LOCAL-00002" summary="3.7. Classes &amp; Objeto">
+      <created>1589986036400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589986036400</updated>
+    </task>
+    <task id="LOCAL-00003" summary="3.8. Construtores &amp; Destrutores">
+      <created>1590110041997</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590110041997</updated>
+    </task>
+    <task id="LOCAL-00004" summary="3.9. Herança">
+      <created>1590147263533</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590147263533</updated>
+    </task>
+    <task id="LOCAL-00005" summary="3.10. Visibilidade">
+      <created>1590148477602</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590148477602</updated>
+    </task>
+    <task id="LOCAL-00006" summary="3.11. Encapsulamento">
+      <created>1590151742184</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590151742184</updated>
+    </task>
+    <task id="LOCAL-00007" summary="3.12. Getters &amp; Setters">
+      <created>1590153119090</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590153119090</updated>
+    </task>
+    <task id="LOCAL-00008" summary="3.13. Classes Abstratas">
+      <created>1590154091285</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590154091285</updated>
+    </task>
+    <task id="LOCAL-00009" summary="3.14. Interfaces">
+      <created>1590155137215</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1590155137215</updated>
+    </task>
+    <task id="LOCAL-00010" summary="3.15. Polimorfismo">
+      <created>1590174779951</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1590174779977</updated>
+    </task>
+    <task id="LOCAL-00011" summary="3.16. Métodos &amp; Atributos Estáticos">
+      <created>1590176155183</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1590176155183</updated>
+    </task>
+    <task id="LOCAL-00012" summary="3.17. Palavra Reservada Final (Classes e métodos)">
+      <created>1590177017655</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1590177017655</updated>
+    </task>
+    <task id="LOCAL-00013" summary="4.19. __set &amp; __get">
+      <created>1590461889302</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1590461889302</updated>
+    </task>
+    <task id="LOCAL-00014" summary="4.20. __call &amp; __callStatic">
+      <created>1590492780928</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1590492780928</updated>
+    </task>
+    <task id="LOCAL-00015" summary="4.21. __toString">
+      <created>1590493734324</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1590493734324</updated>
+    </task>
+    <task id="LOCAL-00016" summary=" 5.24. Conhecendo Namespaces">
+      <created>1590520005888</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590520005888</updated>
+    </task>
+    <task id="LOCAL-00017" summary="5.25. Autoload PSR-4">
+      <created>1590573138467</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1590573138467</updated>
+    </task>
+    <task id="LOCAL-00018" summary="5.26. Autoload com Composer">
+      <created>1590573991896</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1590573991896</updated>
+    </task>
+    <task id="LOCAL-00019" summary="6.27. Type Hiting">
+      <created>1590578406878</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1590578406878</updated>
+    </task>
+    <task id="LOCAL-00020" summary="6.28. Traits 101">
+      <created>1590589728604</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1590589728604</updated>
+    </task>
+    <task id="LOCAL-00021" summary="6.29. Traits Particularidades">
+      <created>1590590683354</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1590590683354</updated>
+    </task>
+    <task id="LOCAL-00022" summary="6.30. Classes Anônimas">
+      <created>1590607855619</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1590607855619</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Módulos Introdutórios 01 e 2" />
+    <MESSAGE value="3.7. Classes &amp; Objeto" />
+    <MESSAGE value="3.8. Construtores &amp; Destrutores" />
+    <MESSAGE value="3.9. Herança" />
+    <MESSAGE value="3.10. Visibilidade" />
+    <MESSAGE value="3.11. Encapsulamento" />
+    <MESSAGE value="3.12. Getters &amp; Setters" />
+    <MESSAGE value="3.13. Classes Abstratas" />
+    <MESSAGE value="3.14. Interfaces" />
+    <MESSAGE value="3.15. Polimorfismo" />
+    <MESSAGE value="3.16. Métodos &amp; Atributos Estáticos" />
+    <MESSAGE value="3.17. Palavra Reservada Final (Classes e métodos)" />
+    <MESSAGE value="4.19. __set &amp; __get" />
+    <MESSAGE value="4.20. __call &amp; __callStatic" />
+    <MESSAGE value="4.21. __toString" />
+    <MESSAGE value=" 5.24. Conhecendo Namespaces" />
+    <MESSAGE value="5.25. Autoload PSR-4" />
+    <MESSAGE value="5.26. Autoload com Composer" />
+    <MESSAGE value="6.27. Type Hiting" />
+    <MESSAGE value="6.28. Traits 101" />
+    <MESSAGE value="6.29. Traits Particularidades" />
+    <MESSAGE value="6.30. Classes Anônimas" />
+    <option name="LAST_COMMIT_MESSAGE" value="6.30. Classes Anônimas" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="376" y="-894" key="#PHP" timestamp="1590590024284">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="376" y="-894" key="#PHP/0.0.1920.1050/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1590590024284" />
+    <state x="765" y="-824" key="#com.intellij.ide.util.MemberChooser" timestamp="1590575309478">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="765" y="-824" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1590575309478" />
+    <state x="324" y="-950" key="CommitChangelistDialog2" timestamp="1590607829924">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="324" y="-950" key="CommitChangelistDialog2/0.0.1920.1050/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1590607829924" />
+    <state x="389" y="-642" key="ComposerInitDialogKey" timestamp="1590573782966">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="389" y="-642" key="ComposerInitDialogKey/0.0.1920.1050/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1590573782966" />
+    <state x="367" y="-817" key="NewPhpClassDialog" timestamp="1590588956667">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="367" y="-817" key="NewPhpClassDialog/0.0.1920.1050/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1590588956667" />
+    <state x="794" y="-617" key="NewPhpFileDialog" timestamp="1590589854152">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="794" y="-617" key="NewPhpFileDialog/0.0.1920.1050/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1590589854152" />
+    <state x="552" y="-807" key="Vcs.Push.Dialog.v2" timestamp="1590608484872">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="552" y="-807" key="Vcs.Push.Dialog.v2/0.0.1920.1050/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1590608484872" />
+  </component>
+</project>

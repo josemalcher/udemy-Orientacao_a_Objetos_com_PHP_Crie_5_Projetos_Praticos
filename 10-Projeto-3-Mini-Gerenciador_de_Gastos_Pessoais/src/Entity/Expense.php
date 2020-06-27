@@ -6,5 +6,5 @@ use Code\DB\Entity;
 
 class Expense extends Entity
 {
-    protected $table = 'expense';
+    protected $table = 'expenses';
 }

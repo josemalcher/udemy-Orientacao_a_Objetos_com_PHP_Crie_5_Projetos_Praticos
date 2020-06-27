@@ -24,7 +24,7 @@ class MyExpensesController
             $post = $_POST;
 
             $expense = new Expense(Connection::getInstace());
-            $expense->insert();
+            $expense->insert($post);
 
             return header('Location' . HOME . '/myexpenses');
 

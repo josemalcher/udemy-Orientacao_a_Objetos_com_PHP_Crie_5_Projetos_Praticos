@@ -17,6 +17,7 @@ class Connection
     {
         if(is_null(self::$instance)){
             self::$instance = new \PDO('mysql:dbname=my_expenses;host=localhost', 'root', '');
+            self::$instance->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             self::$instance->exec('SET NAMES UTF8');
         }
 
