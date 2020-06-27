@@ -1399,7 +1399,7 @@ public function delete(int $id): bool
 ```
 
 #### 10.59. Organizando Projeto
-#### 10.60. Iniciando Cadastro de Gastos
+#### 10.60. Iniciando Cadastro de Gastossssss
 #### 10.61. Processando Cadastro
 #### 10.62. Gerando Banco de Dados - MyExpenses
 #### 10.63. Lançando Exceptions no PDO
