@@ -41,4 +41,16 @@ class MyExpensesController
 
         return $view->render();
     }
+
+    public function edit($id)
+    {
+        $view = new View('expenses/edit.phtml');
+        $connection = Connection::getInstace();
+
+        $view->categories = (new Category($connection))->findAll();
+        $view->users      = (new     User($connection))->findAll();
+        $view->expense    = (new Expense($connection)) ->find($id);
+
+        return $view->render();
+    }
 }
