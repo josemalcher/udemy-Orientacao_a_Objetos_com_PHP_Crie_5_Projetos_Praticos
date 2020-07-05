@@ -14,7 +14,10 @@ class MyExpensesController
 {
     public function index()
     {
-        var_dump((new Expense(Connection::getInstace()))->findAll());
+        $view = new View('expenses/index.phtml');
+        $view->expenses = (new Expense(Connection::getInstace()))->findAll();
+
+        return $view->render();
     }
 
     public function new()

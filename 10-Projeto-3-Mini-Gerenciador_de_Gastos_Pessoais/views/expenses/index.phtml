@@ -1,0 +1,35 @@
+<?php require VIEWS_PATH . 'includes/header.phtml' ?>
+
+    <div class="container">
+        <div class="col-md-12">
+            <h1>Suas Despesas</h1>
+            <hr>
+        </div>
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Criado em</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($this->expenses as $e):?>
+                <tr>
+                    <td><?= $e['id']; ?></td>
+                    <td><?= $e['description']; ?></td>
+                    <td><?= number_format($e['value'], 2, ',', '.') ?></td>
+                    <td><?= date('d/m/Y H:m', strtotime($e['created_at'])); ?></td>
+                    <td>
+                        <a href="#" class="btn btn-default">Editar</a>
+                        <a href="#" class="btn btn-danger">Excluir</a>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<?php require VIEWS_PATH . 'includes/footer.phtml' ?>
